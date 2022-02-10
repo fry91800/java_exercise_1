@@ -3,11 +3,10 @@ class Launcher {
        System.out.println("Binvenue dans le compilateur");
 
        java.util.Scanner scan = new java.util.Scanner(System.in);
-
-       System.out.println("Entrez votre commande");
        String command = scan.nextLine();
-       if (!(command.equals("quit"))) {
+       while (!(command.equals("quit"))) {
            System.out.println("unknown Command");
+           command = scan.nextLine();
        }
    }
 }
